@@ -1,0 +1,4 @@
+How to Run this project
+1. Install requirement : pip install fastapi uvicorn transformers torch pandas datasets
+2. Run in the terminal (and keep it running): uvicorn main2:app --reload 
+3. Open `index.html` in a browser (or use a local server like `python -m http.server`)
