@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Welcome Section with Background Image */
+.welcome-section {
+    background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    color: white;
+}
+
+.welcome-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-overlay p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Result Displays */
+#symptom-result, #diet-result {
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+}
+
+.diet-result {
+    border-left-color: #198754;
+}
+
+/* Loading Animation */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    border-top-color: #0d6efd;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    .welcome-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-overlay p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Navbar and Footer Styles */
+.navbar.bg-primary {
+    background-color: #2a5a78 !important;
+}
+
+footer {
+    background-color: #2a5a78 !important;
+}
+
+/* Card Header Styles */
+#diet-query .card-header h2 {
+    font-weight: 700;
+    transition: font-weight 0.3s ease;
+    color: white !important;
+}
+
+#diet-query .card-header h2:hover {
+    font-weight: 400;
+}
+
+#symptom-tracker .card-header h2 {
+    font-weight: 700;
+    transition: font-weight 0.3s ease;
+}
+
+#symptom-tracker .card-header h2:hover {
+    font-weight: 400;
+}
+
+/* Navigation Link Styles */
+.navbar-nav .nav-item:first-child .nav-link {
+    font-weight: 400;
+    color: rgba(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:first-child .nav-link:hover {
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    font-weight: 400;
+    color: rgba(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:last-child .nav-link:hover {
+    color: white !important;
+    transform: scale(1.05);
+}
+
+/* Content Styles */
+.iron-value {
+    color: #d62828;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.response-content h4 {
+    color: #2a9d8f;
+    margin-top: 1rem;
+}
+
+.response-content h5 {
+    color: #2a5a78;
+    margin: 0.5rem 0;
+}
+
+.response-content ul {
+    padding-left: 20px;
+}
+
+.response-content li {
+    margin-bottom: 8px;
+}
